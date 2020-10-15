@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Sitio de Prácticas</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="header">
+        <h1>MIS PRÁCTICAS</h1>
+    </header>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+      <aside class="panel">
+          <nav class="menu">
+              <a href="#seccion1">La Tienda del Chocolate</a>
+              <a href="#seccion2">Lugar de Origen de la Nutella?</a>  
+              <a href="#seccion3">Contacto</a>
+            </nav>
+        </aside>
+    <main>
+        <section id="seccion1" class="section">
+            <h1 class="tienda">La Tienda del Chocolate</h1>
+            <div class="row-car"> 
+                <div class="elem">
+                    <h2 class="elem-title">Cake Pops</h2>
+                    <img src="./assets/cake-pops.jpg" alt="cake-pops" class="elem-img">
+                    <div class="elem-detalles">
+                        <h3 class="elem-precio">5.99$</h3>
+                        <button class="elem-btn  btn-car">añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="elem">
+                    <h2 class="elem-title">Chocolates</h2>
+                    <img src="./assets/chocolate.jpg" alt="Chocolates" class="elem-img">
+                    <div class="elem-detalles">
+                        <h3 class="elem-precio">5.99$</h3>
+                        <button class="elem-btn  btn-car">añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="elem">
+                    <h2 class="elem-title">Cupcakes</h2>
+                    <img src="./assets/cupcakes.jpg" alt="Cupcakes" class="elem-img">
+                    <div class="elem-detalles">
+                        <h3 class="elem-precio">5.99$</h3>
+                        <button class="elem-btn  btn-car">añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="elem">
+                    <h2 class="elem-title">Brownie</h2>
+                    <img src="./assets/brownie.jpg" alt="Brownie" class="elem-img">
+                    <div class="elem-detalles">
+                        <h3 class="elem-precio">5.99$</h3>
+                        <button class="elem-btn  btn-car">añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="elem">
+                    <h2 class="elem-title">Donut</h2>
+                    <img src="./assets/donut.jpg" alt="Donut" class="elem-img">
+                    <div class="elem-detalles">
+                        <h3 class="elem-precio">5.99$</h3>
+                        <button class="elem-btn  btn-car">añadir al carrito</button>
+                    </div>
+                </div>
+                <div class="elem">
+                    <h2 class="elem-title">Galletas</h2>
+                    <img src="./assets/cookie.jpg" alt="Galletas" class="elem-img">
+                    <div class="elem-detalles">
+                        <h3 class="elem-precio">5.99$</h3>
+                        <button class="elem-btn  btn-car">añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="carrito"> 🛒 </h2>
+            </div>
+            <div class="prod-carrito"> 
+                <div>
+                    <h3 class="panel-carrito">Producto</h3>
+                </div>
+                <div>
+                    <h3 class="panel-carrito">Precio</h3>
+                </div>
+                <div>
+                    <h3 class="panel-carrito">Cantidad</h3>
+                </div>
+            </div>
+            <div class="compra"></div>
+            <div class="total-carrito"></div>
+            <div>
+                <button class="btn-compra">Comprar</button>
+            </div>  
+        </section>
+        <section id="seccion2" class="section">
+            <h1 class="nutella-titulo">Lugar de Origen de la Nutella?</h1>
+            <div id="producto"></div>
+        </section>
+        <section id="seccion3" class="section">
+                <form class="contact-form" action="https://formsubmit.co/katiuskm.m@gmail.com"method="POST" target="_blank">
+                    <legend>Envíame tus Comentarios</legend>
+                    <input type="text" name="name" placeholder="Escribe tu nombre"
+                    title="Nombre solo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"required>
+                    <input type="email" name="email" placeholder="Escribe tu email" title="Email incorrecto"
+                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"required>
+                    <input type="text" name="subject" placeholder="Asunto a tratar" title="El asunto es requerido"required>
+                    <textarea name="comments" cols="50" rows="5" placeholder="Escribe tus comentarios"
+                    title="Tu comentario no debe exceder los 255 caracteres" data-pattern= ^.{1,255}$ required></textarea>
+                    <input type="submit" value="Enviar">
+                    <div class="contact-form-loader none">
+                        <img src="./assets/three-dots.svg" alt="Cargando">
+                    </div>
+                    <div class="contact-form-response none">
+                        <p>Los datos han sido enviados</p>
+                    </div>
+                </form>
+        </section>
+    </main>
+<script src="index.js" type="module" ></script>
+</body>
+</html>
