@@ -1,5 +1,5 @@
 :root{
-    --main-fon:sans-serif;
+    --main-fon: 'raleway', sans-serif;
     --font-size: 16px; 
     --main-color:#41aea9;
     --second-color:#222;
@@ -19,8 +19,8 @@ html{
     box-sizing: inherit;
 }
 .body{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow-x: hidden;
 }
  /*//////////////para el menu de hamburgesa*/
@@ -249,6 +249,9 @@ html{
         width: 15px;
         height: 2px;
     }
+    .bio{
+        text-align: justify;
+    }
 }
 @media (max-width:400px){
     .uno>*{
@@ -287,7 +290,7 @@ html{
 .nutella-titulo{
     font-size: 25px;
     text-shadow: 0 3px 2px rgba(0,0,0.2), 0 3px 2px rgba(0,0,0.4);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .nutella img{
     max-width: 50%;
@@ -311,6 +314,32 @@ html{
 .button:hover{
     box-shadow: 2px 2px 10px rgba(0,0,0,5);
 }
+.chocolate, .tipos{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.chocolate h1{
+    font-size: 20px;
+    text-shadow: 0 2px 2px rgba(0,0,0.2), 0 2px 2px rgba(0,0,0.4);
+    margin: 20px 0;
+}
+.chocolate p{
+    text-align: justify;
+    word-spacing: normal;
+}
+.tipos h1{
+    font-size: 20px;
+    text-shadow: 0 2px 2px rgba(0,0,0.2), 0 2px 2px rgba(0,0,0.4);
+    margin: 20px 0;
+}
+.tipos h3{
+    text-align: left;
+}
+.tipos p{
+    text-align: justify;
+    word-spacing: normal;
+}
+
 /* /////////////////////////Style para el formulario////////////*/
 .contact-form{
     --form-ok-color:#4caf50;
