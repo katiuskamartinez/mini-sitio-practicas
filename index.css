@@ -159,7 +159,11 @@ html{
     font-size: 3rem;
 }
 .panel-carrito{
-    box-shadow: 1px 1px  rgba(0,0,0,6);
+    box-shadow: 1px 1px rgba(0,0,0,5);
+    height: 30px; 
+    padding-bottom: 15px;
+    padding-right: 5px;
+    margin-bottom: 15px;
 }
 .container-compra{
     display: flex;
